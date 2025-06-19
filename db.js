@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 // Use either local or remote MongoDB URL
-const mongoURL = process.env.MONGODB_URL_LOCAL || process.env.MONGODB_URL;
+const mongoURL =  process.env.MONGODB_URL;
 
 if (!mongoURL) {
   console.error(' MongoDB URL is not defined in environment variables.');
